@@ -7,6 +7,12 @@ Bootstrapped with [Create React App](https://github.com/facebook/create-react-ap
 
 Feedback component submission for [VIZE college prep education management](https://www.linkedin.com/company/vizeapp). I was assigned a Feedback React web component to construct in ReactJS from a Flutter App Figma design. Requirements included minimal dependencies outside of TailwindCSS and MaterialIcons necessary to complete the design. For this project submission, I decided to implement the following design using TypeScript. Project submission is purely Front-End.
 
+## Screenshot showcase:
+
+![Desktop view](https://github.com/Wesley26/wd_vize/blob/main/src/demoScreenshots/WIP_Screencap_09.20.2021_Vize_Feedback_Form_UpdateDesktop.png)
+
+![Mobile view](https://github.com/Wesley26/wd_vize/blob/main/src/demoScreenshots/WIP_Screencap_09.20.2021_Vize_Feedback_Form_UpdateMobile.png)
+
 
 ## Component Tree:
 
