@@ -1,46 +1,33 @@
-# Getting Started with Create React App
+# WD_Vize
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bootstrapped with [Create React App](https://github.com/facebook/create-react-app). Implements the following dependencies: [TailwindCSS](https://tailwindcss.com/), [MaterialUI](https://mui.com/), [MaterialIcons](https://www.npmjs.com/package/@mui/icons-material), and [@Emotion/React, @Emotion/Styled](https://www.npmjs.com/package/@emotion/styled).
 
-## Available Scripts
 
-In the project directory, you can run:
+# Documentation:
 
-### `npm start`
+Feedback component submission for [VIZE college prep education management](https://www.linkedin.com/company/vizeapp). I was assigned a Feedback React web component to construct in ReactJS from a Flutter App Figma design. Requirements included minimal dependencies outside of TailwindCSS and MaterialIcons necessary to complete the design. For this project submission, I decided to implement the following design using TypeScript. Project submission is purely Front-End.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Component Tree:
 
-### `npm test`
+Ordered list of components in the component tree including each component that is returned. Each sub-directory in the component tree includes an `index{name of sub directory goes here}.ts` file for sorted importing throughout the solution -
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **src:**
 
-### `npm run build`
+- **components:** All components for entire app.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+⋅⋅1. **feedbackComponents:** Feedback Component folder (a web page). Contains these files: `Feedback.tsx` - returns main feedback web component.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+⋅⋅* **feedbackChildren:** Contains these directories: `formControlChildren`, `subHeaderChildren`, and `subMiddleChildren`. Contains these files: `FormControlBTNS.tsx` - back and submit buttons, `FormHeader.tsx` - returns a back arrow button and header text, `SectionInput.tsx` - Returns section input component, `SubHeaderText.tsx` - returns sub header text component on the form, `SubMiddleText.tsx` - returns text in between section and text area. `TextAreaInput.tsx` - Returns text area input component.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+⋅⋅* **formControlChildren:** Contains these files: `FormBTN.tsx` - Re-usable component to render back/submit buttons.
 
-### `npm run eject`
+⋅⋅* **subHeaderChildren:** Contains these files: `InfoText.tsx` - Re-usable component returning the text for the `subHeaderText.tsx` file.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+⋅⋅* **subMiddleChildren** Contains these files: `InfoSubText.tsx` - Re-usable component returning the text for the `subMiddleText.tsx` file.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+⋅⋅2. **globalComponents:** Components that can be accessed by other web page components. Contains these directories: `headerComponents` and `navFooterComponents`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+⋅⋅* **headerComponents** Contains these files: `BackArrowBTN.tsx` - Globally re-usable back arrow button for web component files that require this button. `HeaderText.tsx` - Globally re-usable Header text for web component files that require this header.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+⋅⋅* **navFooterComponents** Contains these files: `NavFooter.tsx` - Returns a globally re-usable end user navigation selection menu for Home, Search, and End-User's Profile.

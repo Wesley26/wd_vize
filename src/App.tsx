@@ -1,26 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import Feedback from './components/feedbackComponents/Feedback';
+
+const App = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <div className="bg-primary-bg absolute inset-0">
+      <main className="flex flex-1 inset-0 justify-center items-center">
+
+        <Feedback />
+
+      </main>
     </div>
+    
   );
-}
+
+};
 
 export default App;
